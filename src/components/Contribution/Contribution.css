@@ -1,0 +1,66 @@
+.feed {
+}
+
+.contributions .material-symbols-outlined {
+  font-size: 3rem;
+  cursor: pointer;
+  
+}
+
+.contributions li {
+  text-align: center;
+  margin-left: 15%;
+  margin-right: 15%;
+  position: relative;
+  top: 4rem;
+  border: 1px solid grey;
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.top {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  border-bottom: 1px solid grey;
+}
+
+.top .friends {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
+  width: 30%;
+}
+
+.votes {
+  display: block;
+
+  margin-left: 0.8rem;
+}
+
+.top p {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-items: baseline;
+  justify-content: center;
+}
+
+.bottom {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bottom * {
+  margin-top: 2rem;
+}
+
+.bottom h2 {
+  font-weight: bold;
+}

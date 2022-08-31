@@ -1,0 +1,36 @@
+main{
+    background-image: url("./images/jaredd-craig-HH4WBGNyltc-unsplash.jpg");
+    background-position: center;
+    background-size:cover;
+    position: relative;
+    top: 4rem;
+    height: 30rem;
+    background-repeat: no-repeat;
+    padding: 5rem;
+}
+
+main h1{
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0.758);
+    text-align: center;
+    font-family: 'Rubik Maze', cursive;
+   
+}
+
+footer{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    top: 4rem;
+    background-color: rgb(93, 88, 88);
+    padding: 3rem;
+    border-top: 3px solid black;
+    font-size: 1.5rem;
+}
+
+footer *{
+    margin-right: 1rem;
+}
+
+

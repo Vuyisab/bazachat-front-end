@@ -1,0 +1,31 @@
+header{
+    position: fixed;
+    z-index: 5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    column-gap: 2.125rem;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+header ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    row-gap: 0.75rem;
+
+}
+
+header li{
+    padding: 2rem;
+}
+header a{
+    text-decoration: none;
+}
+
+header a.active{
+    font-weight: bold;
+    color: black;
+}

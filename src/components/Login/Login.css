@@ -1,0 +1,52 @@
+
+
+.Form{
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:auto;
+   
+}
+
+form{
+    border: 2px solid grey;
+    padding: 5rem 3rem 5rem 3rem;
+    border-radius: 10px;
+    margin-top: 5rem;
+}
+
+.focus{
+    border: 2px solid green !important;
+}
+
+
+input{
+    border: none;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 1.5rem;
+    
+}
+
+fieldset{
+    padding: 0.3rem;
+    border: 2px solid grey;
+    width: 100%;
+}
+
+.float{
+    float: right;
+}
+
+legend{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.submit{
+    color: white;
+    background-color: black;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
