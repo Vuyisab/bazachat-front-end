@@ -14,13 +14,26 @@ export const Contribution = () => {
   const person = feed[0];
   const { id, name, title, upvotes, body } = person;
 
+  const handleHover = ({ target }) => {};
+
   return (
-    <ul>
-      {feed.map((person) => (
-        <li id={secret++}>
-          <Person secret={person.id} dispatch={dispatch} person={person} />
-        </li>
-      ))}
-    </ul>
+    <section className="container">
+      <div className="banner">
+        <div className="overlay"></div>
+        <h1>
+          Welcome <br />
+          to <br />
+          your feed{" "}
+        </h1>
+      </div>
+
+      <ul>
+        {feed.map((person) => (
+          <li id={secret++}>
+            <Person secret={person.id} dispatch={dispatch} person={person} />
+          </li>
+        ))}
+      </ul>
+    </section>
   );
 };

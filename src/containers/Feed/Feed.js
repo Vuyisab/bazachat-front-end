@@ -12,9 +12,10 @@ export const Feed = (me)=>{
     const feed = useSelector(selectMyFeed);
     //console.log(feed);
     return (
-        <section>
+        <section className="feed">
             <Side/>
             <article className="contributions">
+                
                 <Contribution/>
             </article>
             

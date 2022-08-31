@@ -18,17 +18,21 @@
 }
 
 .Side{
-    position: relative;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
     top: 5rem;
     color: black;
-    border-top: 2px solid grey;
-    padding: 2rem;
+    padding: 1rem;
     display: flex;
     align-items: center;
     align-content: space-between;
     flex-wrap: wrap;
     justify-items: center;
     justify-content: center;
+    background-color:purple;
+ 
+    margin-bottom: 2rem;
 }
 
 .Side li{
@@ -43,5 +47,19 @@
     flex-wrap: wrap;
 }
 
+.Side a{
+  color: white;
+  text-decoration: none;
+}
+
+.Side a:hover{
+  color: green;
+  font-weight: bold;
+}
+
+a.active{
+  font-weight: bold;
+  color: black;
+}
 
 

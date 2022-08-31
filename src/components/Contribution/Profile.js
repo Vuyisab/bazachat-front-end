@@ -33,7 +33,7 @@ export const Person = ({secret,dispatch,person}) =>{
           </article>
           <article className="bottom">
             <h2>{title}</h2>
-            <p>{body}</p>
+            <p>{body.substr(0,200) + "..."}</p>
           </article>
         </section>
       );

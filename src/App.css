@@ -1,5 +1,5 @@
 main{
-    background-image: url("./images/jaredd-craig-HH4WBGNyltc-unsplash.jpg");
+    background-image: linear-gradient(to right, rgba(50, 70, 80, 0.692), rgba(31, 20, 150, 0.26)),url("./images/jaredd-craig-HH4WBGNyltc-unsplash.jpg");
     background-position: center;
     background-size:cover;
     position: relative;

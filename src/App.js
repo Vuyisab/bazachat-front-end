@@ -30,8 +30,8 @@ function App() {
       <Route exact path="/">
         <main>
           <h1>
-            Welcome to Peer 2 Peer University,
-            <br></br>the home of learning circles
+            Welcome to <br/>Peer 2 Peer University<br/>
+            the home of <br/>learning circles
           </h1>
         </main>
       </Route>
