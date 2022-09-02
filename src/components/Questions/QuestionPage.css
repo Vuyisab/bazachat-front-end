@@ -1,0 +1,121 @@
+
+#forums {
+    position: relative;
+    top: 10.5rem;
+    background-color: #cddce986;
+    
+}
+
+#forums #container{
+    position: relative;
+    top: 3rem;
+    padding: 1rem;
+    background-color: white;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+}
+
+#forums .lineone{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+#forums .title{
+    font-weight: bold;
+}
+
+#forums h1 span{
+    display: block;
+}
+
+#forums h1{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 20%;
+}
+
+#profilin{
+    border: 3px solid black;
+    text-align: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #cddce986;
+}
+
+#body{
+    background-color:#cddce986;
+    padding: 1rem;
+}
+
+#forums .reply{
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    cursor: pointer;
+    align-items: center;
+    padding-right: 0.5rem;
+}
+
+#forums .reply .up{
+    display: block;
+    margin-right: 1rem;
+}
+
+#forums .yeah:hover{
+    color: purple;
+}
+
+.thelabels{
+    display: flex;
+
+    flex-direction: column;
+    align-items: baseline;
+    justify-items: baseline;
+    width: 15%;
+}
+
+.stats{
+    font-size: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border: 2px solid grey;
+    box-shadow: 0.2rem 0rem grey;
+    background-color: #cddce986;
+    padding-left: 2rem;
+}
+
+.thelabels div{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0px;
+
+}
+
+.stats .bigboys{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.stats .bigboys div{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.stats .big{
+    font-size: 2rem;
+
+}

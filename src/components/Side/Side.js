@@ -31,7 +31,7 @@ export const Side = () => {
   
       </li>
       <li>
-        <NavLink exact to="/">
+        <NavLink to="/forums">
         <span class="material-symbols-outlined">forum</span> Discussions
         </NavLink>
         

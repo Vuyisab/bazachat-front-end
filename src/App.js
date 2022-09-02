@@ -5,6 +5,7 @@ import { LoginForm } from "./components/Login/LoginComponent";
 import { Header } from "./components/Header/Header";
 import { Feed } from "./containers/Feed/Feed";
 import { Home } from "./components/Home/Home";
+import { QuestionPage } from "./components/Questions/QuestionPage";
 import {
   BrowserRouter as Router,
   Route,
@@ -19,6 +20,7 @@ import { selectPass } from "./components/Login/LoginSlice";
 import { useSelector, Provider } from "react-redux";
 import store from "./store";
 import reportWebVitals from "./reportWebVitals";
+import { Forums } from "./containers/Forums/Forums";
 
 function App() {
   return (
@@ -30,14 +32,25 @@ function App() {
       <Route exact path="/">
         <main>
           <h1>
-            Welcome to <br/>Peer 2 Peer University<br/>
-            the home of <br/>learning circles
+            Welcome to <br />
+            Peer 2 Peer University
+            <br />
+            the home of <br />
+            learning circles
           </h1>
         </main>
       </Route>
-      <Route path = "/feed">
-        <Feed/>
+      <Route exact path="/feed">
+        <Feed />
       </Route>
+ 
+        <Route exact path="/forums/:id">
+          <QuestionPage />
+        </Route>
+        <Route exact path="/forums">
+          <Forums />
+        </Route>
+
       <footer>
         <p>BazaTech&copy;</p>
         <p>BazaChat&trade;</p>

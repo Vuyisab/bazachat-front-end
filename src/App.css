@@ -9,6 +9,10 @@ main{
     padding: 5rem;
 }
 
+body{
+    font-family: 'Signika Negative', sans-serif;
+}
+
 main h1{
     font-size: 5rem;
     color: rgba(255, 255, 255, 0.758);
