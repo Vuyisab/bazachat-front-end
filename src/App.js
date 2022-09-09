@@ -21,6 +21,7 @@ import { useSelector, Provider } from "react-redux";
 import store from "./store";
 import reportWebVitals from "./reportWebVitals";
 import { Forums } from "./containers/Forums/Forums";
+import { SignUpForm } from "./components/Login/SignUp";
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
       <Header />
       <Route path="/login">
         <LoginForm />
+      </Route>
+      <Route path="/signUp">
+        <SignUpForm/>
       </Route>
       <Route exact path="/">
         <main>

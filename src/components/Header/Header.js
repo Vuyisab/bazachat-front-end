@@ -14,7 +14,7 @@ export const Header = ()=>{
                     {pass && <li><NavLink exact to="/feed">Feed</NavLink></li>}
                     
                     <li><NavLink to="/login">Sign In</NavLink></li>
-                    <li><NavLink to="/SignUp">Sign Up</NavLink></li>
+                    <li><NavLink to="/signUp">Sign Up</NavLink></li>
                 </ul>
             </nav>
         </header>

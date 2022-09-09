@@ -33,7 +33,7 @@ export const LoginForm = () => {
 
   const handlePassword = ({ target }) => {
     const Password = target.value;
-    console.log({ password: Password });
+    //console.log({ password: Password });
     dispatch(addPassword(Password));
   };
 
@@ -48,14 +48,14 @@ export const LoginForm = () => {
   return (
     <section className="Form">
       <form onSubmit={handleSubmit}>
-        <legend>Sign In</legend>
+        <legend className="titale">Sign In</legend>
         <fieldset id="name">
           <legend>Username</legend>
           <input
             className="wide"
             type="text"
             name="username"
-            placeholder="Username"
+            placeholder="Enter your username"
             onChange={handleName}
           />
         </fieldset>
@@ -66,6 +66,7 @@ export const LoginForm = () => {
             className="wide"
             type="password"
             name="password"
+            placeholder="Enter your password"
             onChange={handlePassword}
           />
         </fieldset>
