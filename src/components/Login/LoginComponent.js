@@ -1,4 +1,4 @@
-import React from "react";
+import {React,useEffect} from "react";
 import store from "../../store";
 import { addName, addPassword, logIN } from "./LoginSlice";
 import { selectName, selectPassword, selectPass } from "./LoginSlice";
@@ -6,14 +6,16 @@ import { useSelector, useDispatch } from "react-redux/es/exports";
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import "./Login.css";
+import { addArticle } from "../../containers/Feed/FeedSlice";
+import { selectMyFeed } from "../../containers/Feed/FeedSlice";
 
 export const LoginForm = () => {
   const name = useSelector(selectName);
   const password = useSelector(selectPassword);
   const allow = useSelector(selectPass);
-  console.log(allow);
   const dispatch = useDispatch();
   const history = useHistory();
+  const feed = useSelector(selectMyFeed);
   const [loginData, setLoginData] = useState({
     name: "",
     password: "",
@@ -39,11 +41,17 @@ export const LoginForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(logIN());
+    fetch(`http://localhost:3001/users/${name}`).then(response=>response.json()).then(data=>{
+      const x = data.password;
+      dispatch(logIN(x));
+    })
+    
   };
 
+ 
+
   if(allow){
-    history.push("/feed");
+   history.push("/feed");
   }
   return (
     <section className="Form">
@@ -71,6 +79,7 @@ export const LoginForm = () => {
           />
         </fieldset>
         <br />
+        {allow===false ? <p className="danger">Your email or password was incorrect</p>: <p></p>}
         <br />
         <input
           className="submit float"
@@ -78,6 +87,7 @@ export const LoginForm = () => {
           value="sign In"
           onClick={handleSubmit}
         />
+        
       </form>
     </section>
   );

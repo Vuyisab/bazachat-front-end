@@ -73,3 +73,7 @@ legend{
     color: black;
     background-color: white;
 }
+
+.danger{
+    color: red;
+}
