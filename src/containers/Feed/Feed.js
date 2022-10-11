@@ -15,7 +15,7 @@ export const Feed = (me) => {
   const feed = useSelector(selectMyFeed);
   const dispatch = useDispatch();
   useEffect(()=>{
-    fetch(`http://localhost:3001/feed/all`).then(response=>response.json()).then(data=>{
+    fetch(`https://bazachat-backend.herokuapp.com/feed/all`).then(response=>response.json()).then(data=>{
     data.forEach(article=>{
       dispatch(addArticle(article));
     })

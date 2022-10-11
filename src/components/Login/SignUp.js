@@ -75,7 +75,7 @@ export const SignUpForm = () => {
       email: email,
       password: password,
     };
-    fetch("http://localhost:3001/users/signup", {
+    fetch("https://bazachat-backend.herokuapp.com/users/signup", {
       method: "POST",
       body: JSON.stringify(user),
       headers: {

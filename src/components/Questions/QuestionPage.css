@@ -6,7 +6,7 @@
     
 }
 
-#forums #container{
+#forums .container{
     position: relative;
     top: 3rem;
     padding: 1rem;

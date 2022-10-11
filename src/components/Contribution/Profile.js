@@ -11,7 +11,7 @@ export const Person = ({ secret, dispatch, person }) => {
     //dispatch(upvote(name));
     //console.log("we are here");
     dispatch(upvote(person.firstname));
-    fetch(`http://localhost:3001/feed/vote/${_id}`, {
+    fetch(`https://bazachat-backend.herokuapp.com/feed/vote/${_id}`, {
       method: "POST",
       body: JSON.stringify({vote:votes+1}),
       headers: {
@@ -23,7 +23,7 @@ export const Person = ({ secret, dispatch, person }) => {
 
   const handleDown = ({ target }) => {
     dispatch(downvote(person.firstname));
-    fetch(`http://localhost:3001/feed/vote/${_id}`, {
+    fetch(`https://bazachat-backend.herokuapp.com/feed/vote/${_id}`, {
       method: "POST",
       body: JSON.stringify({vote:votes-1}),
       headers: {

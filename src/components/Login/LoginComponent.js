@@ -41,7 +41,7 @@ export const LoginForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch(`http://localhost:3001/users/${name}`).then(response=>response.json()).then(data=>{
+    fetch(`https://bazachat-backend.herokuapp.com/users/${name}`).then(response=>response.json()).then(data=>{
       const x = data.password;
       dispatch(logIN(x));
     })
@@ -86,8 +86,7 @@ export const LoginForm = () => {
           type="submit"
           value="sign In"
           onClick={handleSubmit}
-        />
-        
+        />       
       </form>
     </section>
   );
